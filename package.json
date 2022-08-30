@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "tailwind:dev": "tailwindcss -i ./styles/tailwind.css -o ./src/styles/main.css --watch",
+    "tailwind:dev": "tailwindcss -i ./styles/main.css -o ./src/styles/tailwind.css --watch",
     "eleventy:dev": "eleventy --serve",
     "eleventy:build": "eleventy",
     "dev": "concurrently \"yarn eleventy:dev\" \"yarn tailwind:dev\"",
