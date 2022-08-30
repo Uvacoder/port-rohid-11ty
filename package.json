@@ -2,5 +2,19 @@
   "name": "rohid-dev",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "tailwind:dev": "tailwindcss -i ./styles/tailwind.css -o ./src/styles/main.css --watch",
+    "eleventy:dev": "eleventy --serve",
+    "eleventy:build": "eleventy",
+    "dev": "concurrently \"yarn eleventy:dev\" \"yarn tailwind:dev\"",
+    "build": "yarn tailwind:dev && yarn eleventy:dev"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "11ty/eleventy",
+    "autoprefixer": "^10.4.8",
+    "concurrently": "^7.3.0",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
+  }
 }
