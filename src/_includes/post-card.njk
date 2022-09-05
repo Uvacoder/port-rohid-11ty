@@ -1,0 +1,18 @@
+<article class="post-card">
+  <a href={{post.url}}>
+    <figure>
+      <img src="{{ post.data.coverPhoto }}" alt="Cover Photo" class="cover-photo">
+    </figure>
+  </a>
+    <h3 class="title">
+      <a href={{post.url}}>
+        {{ post.data.title }}
+      </a>
+    </h3>
+  <p class="summery">{{ post.data.summery }}</p>
+  <p class="details">
+    <time>{{ post.data.date | formatDate }}</time>
+    <span>•</span>
+    <span>{{ post.templateContent | readingTime }}</span>
+  </p>
+</article>

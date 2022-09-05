@@ -1,9 +1,9 @@
 ---
 type: Post
 title: Top 10 VSCode Extensions for React
-description: We will be covering 10 essential visual studio code extensions for React developers. These extensions will help you code faster, cleaner and easier.
+summery: We will be covering 10 essential visual studio code extensions for React developers. These extensions will help you code faster, cleaner and easier.
 date: 2022-07-24
-coverPhoto: /assets/img/cover-image.jpg
+coverPhoto: /assets/posts/test-photo-03.jpg
 tags:
   - vscode
   - react

@@ -1,0 +1,36 @@
+{
+  "title": "Rohid",
+  "description": "My Blog site",
+  "info": {
+    "title": "I'm Rohid - Self-thought programmer and designer",
+    "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium eligendi dolore\n blanditiis excepturi aperiam maiores officia nesciunt vitae nostrum quis."
+  },
+  "menu": {
+    "main": [
+      {
+        "label": "Blog",
+        "href": "/blog",
+        "weight": 100
+      },
+      {
+        "label": "Projects",
+        "href": "/projects",
+        "weight": 90
+      },
+      {
+        "label": "Categories",
+        "href": "/categories",
+        "weight": 20
+      },
+      {
+        "label": "Tags",
+        "href": "/tags",
+        "weight": 10
+      },
+      {
+        "label": "Hire Me",
+        "href": "/hire-me"
+      }
+    ]
+  }
+}

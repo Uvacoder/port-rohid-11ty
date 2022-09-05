@@ -12,7 +12,12 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "11ty/eleventy",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
     "concurrently": "^7.3.0",
     "sass": "^1.54.8"
+  },
+  "dependencies": {
+    "date-fns": "^2.29.2",
+    "reading-time": "^1.5.0"
   }
 }

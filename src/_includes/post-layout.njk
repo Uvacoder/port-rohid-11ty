@@ -1,0 +1,27 @@
+---
+layout: base-layout.njk
+---
+
+<div class="post-layout">
+  <header class="post-header">
+    <div class="container">
+      <h1 class="title">{{ title }}</h1>
+      <p class="info">
+        <span>Published at {{ date | formatDate }}</span>
+        <span>•</span>
+        <span>{{ content | readingTime }}</span>
+      </p>
+      <figure>
+        <img src="{{ coverPhoto }}" alt="Cover Photo" class="cover-photo">
+      </figure>
+    </div>
+  </header>
+
+  <main class="post-main">
+    <div class="container">
+      <article class="prose">
+      {{content|safe}}
+      </article>
+    </div>
+  </main>
+</div>

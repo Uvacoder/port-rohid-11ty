@@ -1,31 +1,35 @@
+@use "../variables/colors.scss" as *;
+
 .newsletter-form {
   .newsletter-summery {
-    font-size: 0.875em;
+    color: $color-gray-600;
+    margin: 0;
+    margin-bottom: 0.5em;
   }
   .form-group {
     display: flex;
     input {
-      height: 2.25em;
+      height: 2.5em;
       padding-inline: 1em;
-      background-color: #f1f5f9;
+      background-color: $color-gray-100;
       border-radius: 0.25em;
-      margin-right: 0.375em;
+      margin-right: 0.5em;
       width: 100%;
       flex: 1;
       max-width: 24rem;
       &::placeholder {
-        color: #94a3b8;
+        color: $color-gray-500;
       }
     }
     button {
-      background-color: #f1f5f9;
-      height: 2.25em;
-      padding-inline: 1em;
+      background-color: $color-gray-800;
+      height: 2.5em;
+      padding-inline: 1.25em;
       border-radius: 0.25em;
-      color: #1e293b;
+      color: $color-gray-50;
       font-weight: 500;
       &:hover {
-        background-color: #e2e8f0;
+        background-color: $color-gray-700;
       }
     }
   }

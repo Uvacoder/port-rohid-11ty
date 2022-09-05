@@ -1,8 +1,9 @@
 ---
 type: Post
 title: Next.js Setup with TypeScript & Tailwind CSS
-description: Let's create a next.js Project with TypeScript and Tailwindcss from scratch!
+summery: Let's create a next.js Project with TypeScript and Tailwindcss from scratch!
 date: 2022-08-30
+coverPhoto: /assets/posts/test-photo-01.jpg
 tags:
   - nextjs
   - typescript
@@ -22,7 +23,7 @@ Create a directory with the name of your project. Then open that folder in a ter
 
 Let's initialize node in this directory. In terminal run this command to initialize node
 
-```
+```bash
 yarn init -y
 ```
 
@@ -30,7 +31,7 @@ yarn init -y
 
 Let's add next.js and react packages to this project. Run this command
 
-```
+```bash
 yarn add -D next react react-dom
 ```
 
@@ -38,7 +39,7 @@ yarn add -D next react react-dom
 
 Let's add typescript in our project. Run This command
 
-```
+```bash
 yarn add -D typescript @types/react @types/react-dom @types/node
 ```
 
@@ -46,7 +47,7 @@ yarn add -D typescript @types/react @types/react-dom @types/node
 
 Open up `package.josn` file and add scripts for next.js.
 
-```
+```json
 // package.json
 {
    ...
@@ -64,7 +65,7 @@ Open up `package.josn` file and add scripts for next.js.
 
 In the root directory create a `pages` folder and inside that create an `index.tsx` file.
 
-```
+```bash
 project-directory
     ...
     pages
@@ -74,7 +75,7 @@ project-directory
 
 After that export a react component from `index.tsx`. This file will be the home page `/` of your website.
 
-```
+```tsx
 // pages/index.tsx
 
 export default function () {
@@ -90,7 +91,7 @@ export default function () {
 
 Now open up a terminal and run
 
-```
+```bash
 yarn dev
 ```
 
@@ -102,13 +103,13 @@ Awesome so far we completed creating a next.js project with typescript. Now time
 
 Go to terminal and run this command
 
-```
+```bash
 yarn add -D tailwindcss@latest postcss@latest autoprefixer@latest
 ```
 
 After that run this
 
-```
+```bash
 npx tailwindcss init -p
 ```
 
@@ -116,7 +117,7 @@ This will initialize Tailwindcss and create a `tailwind.config.js` file in our r
 
 Open `tailwind.config.js` file and do the following changes
 
-```
+```js
 // tailwind.config.js
 ...
 module.exports = {
@@ -127,7 +128,7 @@ module.exports = {
 
 Inside `pages` directory creates `_app.tsx` file.
 
-```
+```bash
 project-directory
     ...
     pages
@@ -138,7 +139,7 @@ project-directory
 
 Open this file. Add the following
 
-```
+```tsx
 // pages/_app.tsx
 
 import React from "react";
@@ -146,7 +147,7 @@ import type { AppProps } from "next/app";
 import "tailwindcss/tailwind.css";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
-  return <Component {...pageProps} />
+  return <Component {...pageProps} />;
 };
 
 export default MyApp;

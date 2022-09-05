@@ -1,7 +1,9 @@
+@use "../variables/colors.scss" as *;
+
 .footer {
-  background-color: #1e293b;
+  background-color: $color-gray-800;
   padding-block: 4rem;
-  color: #fff;
+  color: $color-gray-50;
 
   .footer-title {
     font-size: 1.25rem;
@@ -16,16 +18,16 @@
 
   .newsletter-form {
     .newsletter-summery {
-      color: #94a3b8;
+      color: $color-gray-300;
     }
     input {
-      background-color: #334155;
+      background-color: $color-gray-700;
     }
     button {
-      background-color: #334155;
-      color: #f8fafc;
+      background-color: $color-gray-50;
+      color: $color-gray-800;
       &:hover {
-        background-color: #475569;
+        background-color: $color-gray-200;
       }
     }
   }
@@ -33,14 +35,14 @@
   .footer-menu {
     gap: 1rem;
     li > a {
-      color: #94a3b8;
+      color: $color-gray-300;
       &:hover {
-        color: #f8fafc;
+        color: $color-gray-50;
       }
     }
   }
 
   .copyright-text {
-    color: #94a3b8;
+    color: $color-gray-300;
   }
 }

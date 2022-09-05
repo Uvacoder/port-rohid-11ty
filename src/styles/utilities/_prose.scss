@@ -1,0 +1,23 @@
+@use "../variables/colors.scss" as *;
+
+.prose {
+  img {
+    width: 100%;
+  }
+  color: $color-gray-600;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  b,
+  strong {
+    color: $color-gray-900;
+  }
+
+  pre {
+    border-radius: 0.5rem;
+  }
+}

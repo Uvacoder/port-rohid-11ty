@@ -1,10 +1,10 @@
 ---
 title: Home
-layout: base.njk
+layout: base-layout.njk
 ---
 
 
-<header>
+<header class="header">
   <div class="container">
     <h1>
       I'm Rohid, Self thought Developer and Designer
@@ -18,10 +18,15 @@ layout: base.njk
 
 <main>
   <div class="container">
-    <div class="posts-grid">
-      {% for post in collections.posts %}
-      {% include "post-item.njk" %}
-      {% endfor %}
-    </div>
+    <section id="featured-posts" class="section">
+      <div class="section-header">
+        <p class="section-title">Featured Posts</p>
+      </div>
+      <div class="posts-grid">
+        {% for post in collections.posts %}
+        {% include "post-card.njk" %}
+        {% endfor %}
+      </div>
+    </section>
   </div>
 </main>
