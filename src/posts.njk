@@ -1,0 +1,19 @@
+---
+title: Posts
+layout: page.njk
+---
+
+<header>
+  <div class="container">
+    <h1>Posts</h1>
+  </div>
+</header>
+<main>
+  <div class="container">
+    <div class="posts-grid">
+      {% for post in collections.posts %}
+      {% include "post-item.njk" %}
+      {% endfor %}
+    </div>
+  </div>
+</main>

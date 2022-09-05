@@ -1,0 +1,11 @@
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  li > a {
+    color: #475569;
+    &:hover {
+      color: #1e293b;
+    }
+  }
+}

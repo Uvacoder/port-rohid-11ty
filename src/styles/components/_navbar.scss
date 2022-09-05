@@ -1,0 +1,19 @@
+.nav-bar {
+  .content {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  .nav-logo {
+    font-size: 1.25rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  .left-wrapper {
+    flex: 1;
+  }
+  .nav-menu {
+    gap: 2rem;
+  }
+}

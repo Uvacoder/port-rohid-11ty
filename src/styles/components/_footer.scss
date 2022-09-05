@@ -1,0 +1,46 @@
+.footer {
+  background-color: #1e293b;
+  padding-block: 4rem;
+  color: #fff;
+
+  .footer-title {
+    font-size: 1.25rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .footer-menu,
+  .newsletter-form {
+    margin-block: 2rem;
+  }
+
+  .newsletter-form {
+    .newsletter-summery {
+      color: #94a3b8;
+    }
+    input {
+      background-color: #334155;
+    }
+    button {
+      background-color: #334155;
+      color: #f8fafc;
+      &:hover {
+        background-color: #475569;
+      }
+    }
+  }
+
+  .footer-menu {
+    gap: 1rem;
+    li > a {
+      color: #94a3b8;
+      &:hover {
+        color: #f8fafc;
+      }
+    }
+  }
+
+  .copyright-text {
+    color: #94a3b8;
+  }
+}

@@ -1,0 +1,32 @@
+.newsletter-form {
+  .newsletter-summery {
+    font-size: 0.875em;
+  }
+  .form-group {
+    display: flex;
+    input {
+      height: 2.25em;
+      padding-inline: 1em;
+      background-color: #f1f5f9;
+      border-radius: 0.25em;
+      margin-right: 0.375em;
+      width: 100%;
+      flex: 1;
+      max-width: 24rem;
+      &::placeholder {
+        color: #94a3b8;
+      }
+    }
+    button {
+      background-color: #f1f5f9;
+      height: 2.25em;
+      padding-inline: 1em;
+      border-radius: 0.25em;
+      color: #1e293b;
+      font-weight: 500;
+      &:hover {
+        background-color: #e2e8f0;
+      }
+    }
+  }
+}
