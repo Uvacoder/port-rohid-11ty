@@ -6,10 +6,11 @@
       </div>
       <div class="right-wrapper">
         <ul class="menu nav-menu">
-          <li><a href="/posts">Posts</a></li>
-          <li><a href="/tags">Tags</a></li>
-          <li><a href="/newsletter">Newsletter</a></li>
-          <li><a href="/hire-me">Hire Me</a></li>
+          {% for item in nav.items %}
+            <li>
+              <a href="{{ item.href }}" {% if item.href == page.url %} class="active" {% endif %}>{{ item.label }}</a>
+              </li>
+          {% endfor %}
         </ul>
       </div>
     </div>

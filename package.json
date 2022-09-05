@@ -8,12 +8,13 @@
     "eleventy:dev": "eleventy --serve",
     "eleventy:build": "eleventy",
     "dev": "concurrently \"yarn sass:dev\" \"yarn eleventy:dev\"",
-    "build": "yarn sass:build && yarn eleventy:build"
+    "build": "rimraf build && yarn sass:build && yarn eleventy:build"
   },
   "devDependencies": {
     "@11ty/eleventy": "11ty/eleventy",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
     "concurrently": "^7.3.0",
+    "rimraf": "^3.0.2",
     "sass": "^1.54.8"
   },
   "dependencies": {

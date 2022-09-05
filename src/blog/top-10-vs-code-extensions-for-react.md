@@ -1,13 +1,8 @@
 ---
-type: Post
 title: Top 10 VSCode Extensions for React
-summery: We will be covering 10 essential visual studio code extensions for React developers. These extensions will help you code faster, cleaner and easier.
+description: We will be covering 10 essential visual studio code extensions for React developers. These extensions will help you code faster, cleaner and easier.
 date: 2022-07-24
 coverPhoto: /assets/posts/test-photo-03.jpg
-tags:
-  - vscode
-  - react
-draft: false
 ---
 
 ## What will be covered here?
@@ -16,40 +11,36 @@ We will be covering 10 essential visual studio code extensions for React develop
 
 ## Top 10 VS Code Extensions for React
 
-1. **ES7 React/Redux/GraphQL/React-Native snippets**
-2. **Prettier – Code formatted**
-3. **Bracket Pair Colorizer**
-4. **Auto Rename Tag**
-5. **VSCode React Refactor**
-6. **ESLint**
-7. **npm Intellisense**
-8. **TabOut**
-9. **change-case**
-10. **EditorConfig for VS Code**
+1. ES7 React/Redux/GraphQL/React-Native snippets
+2. Prettier – Code formatted
+3. Bracket Pair Colorizer
+4. Auto Rename Tag
+5. VSCode React Refactor
+6. ESLint
+7. npm Intellisense
+8. TabOut
+9. change-case
+10. EditorConfig for VS Code
 
-## **ES7 React/Redux/GraphQL/React-Native snippets** Extension
+## ES7 React/Redux/GraphQL/React-Native snippets Extension
 
 JavaScript and React/Redux snippets in ES7+ with Babel plugin features for [VS Code](https://code.visualstudio.com/)
 
 [Install It](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
 
-## **Prettier – Code formatted**
+## Prettier – Code formatted
 
 [Prettier](https://prettier.io/) is an opinionated code formatter. It enforces a consistent style by parsing your code and re-printing it with its own rules that take the maximum line length into account, wrapping code when necessary.
 
-![**Prettier – Code formatted**](https://glebbahmutov.com/blog/images/prettier/projectB.gif)
-
-**Prettier – Code formatted**
+![Prettier – Code formatted](https://glebbahmutov.com/blog/images/prettier/projectB.gif)
 
 [Install It](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
-## **Highlight Matching Tag**
+## Highlight Matching Tag
 
 This extension highlights matching opening and/or closing tags. Optionally it also shows the path to tag in the status bar. Even though VSCode has some basic tag matching, it's just that - basic. This extension will try to match tags anywhere: from tag attributes, inside of strings, any files, while also providing extensive styling options to customize how tags are highlighted.
 
-![**Highlight Matching Tag**](https://images2.imgbox.com/71/2a/zIA1XCzK_o.gif)
-
-**Highlight Matching Tag**
+![Highlight Matching Tag](https://images2.imgbox.com/71/2a/zIA1XCzK_o.gif)
 
 [Install It](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag)
 
@@ -63,13 +54,11 @@ Auto Rename Tag
 
 [Install It](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 
-## **VSCode React Refactor**
+## VSCode React Refactor
 
 This simple extension provides JSX refactor code actions for React developers.
 
-![**VSCode React Refactor**](https://github.com/planbcoding/vscode-react-refactor/raw/master/assets/images/preview.gif)
-
-**VSCode React Refactor**
+![VSCode React Refactor](https://github.com/planbcoding/vscode-react-refactor/raw/master/assets/images/preview.gif)
 
 [Install It](https://marketplace.visualstudio.com/items?itemName=planbcoding.vscode-react-refactor)
 
@@ -79,13 +68,11 @@ ESLint statically analyzes your code to quickly find problems. ESLint is built i
 
 [Install It](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
-## **npm Intellisense**
+## npm Intellisense
 
 It autocompletes npm modules in import statements.
 
-![**npm Intellisense**](https://github.com/ChristianKohler/NpmIntellisense/raw/master/images/auto_complete.gif)
-
-**npm Intellisense**
+![npm Intellisense](https://github.com/ChristianKohler/NpmIntellisense/raw/master/images/auto_complete.gif)
 
 [Install It](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)
 

@@ -1,14 +1,8 @@
 ---
-type: Post
 title: Next.js Setup with TypeScript & Tailwind CSS
-summery: Let's create a next.js Project with TypeScript and Tailwindcss from scratch!
+description: Let's create a next.js Project with TypeScript and Tailwindcss from scratch!
 date: 2022-08-30
 coverPhoto: /assets/posts/test-photo-01.jpg
-tags:
-  - nextjs
-  - typescript
-  - tailwindcss
-draft: false
 ---
 
 Hi everyone.

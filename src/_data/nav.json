@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "Projects",
+      "href": "/projects"
+    },
+    {
+      "label": "Categories",
+      "href": "/categories"
+    },
+    {
+      "label": "Tags",
+      "href": "/tags"
+    },
+    {
+      "label": "Newsletter",
+      "href": "/newsletter"
+    },
+    {
+      "label": "Hire Me",
+      "href": "/hire-me"
+    }
+  ]
+}

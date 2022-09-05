@@ -1,9 +1,9 @@
 ---
-layout: base-layout.njk
+layout: base.njk
 ---
 
-<div class="post-layout">
-  <header class="post-header">
+<div class="blog-layout">
+  <header>
     <div class="container">
       <h1 class="title">{{ title }}</h1>
       <p class="info">
@@ -12,16 +12,14 @@ layout: base-layout.njk
         <span>{{ content | readingTime }}</span>
       </p>
       <figure>
-        <img src="{{ coverPhoto }}" alt="Cover Photo" class="cover-photo">
+        <img src="{{ coverPhoto }}" alt="Cover Photo" class="cover-photo" />
       </figure>
     </div>
   </header>
 
-  <main class="post-main">
+  <main>
     <div class="container">
-      <article class="prose">
-      {{content|safe}}
-      </article>
+      <article class="prose">{{content|safe}}</article>
     </div>
   </main>
 </div>

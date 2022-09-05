@@ -1,13 +1,8 @@
 ---
-type: Post
 title: Next.js with Typescript
-summery: In this blog, we are going to see how easily we can implement TypeScript into a nextjs project. Are you excited? It's super simple to do trust me 😉.
+description: In this blog, we are going to see how easily we can implement TypeScript into a nextjs project. Are you excited? It's super simple to do trust me 😉.
 date: 2022-08-25
 coverPhoto: /assets/posts/test-photo-02.jpg
-tags:
-  - nextjs
-  - typescript
-draft: false
 ---
 
 ## Introduction 🥸

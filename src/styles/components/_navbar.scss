@@ -16,6 +16,10 @@
     flex: 1;
   }
   .nav-menu {
+    display: none;
+    @media (min-width: 768px) {
+      display: flex;
+    }
     gap: 2rem;
   }
 }

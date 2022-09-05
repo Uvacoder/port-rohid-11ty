@@ -1,32 +1,29 @@
 ---
+layout: base.njk
 title: Home
-layout: base-layout.njk
 ---
 
+<div class="home-layout">
+  <header>
+    <div class="container">
+      <h1 class="title">{{ site.info.title }}</h1>
+      <p class="subtitle">{{ site.info.content }}</p>
+      {% include "newsletter-form.njk" %}
+    </div>
+  </header>
 
-<header class="header">
-  <div class="container">
-    <h1>
-      I'm Rohid, Self thought Developer and Designer
-    </h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eum unde molestias ducimus laborum numquam corrupti est libero hic sapiente.
-    </p>
-    {% include "newsletter-form.njk" %}
-  </div>
-</header>
-
-<main>
-  <div class="container">
-    <section id="featured-posts" class="section">
-      <div class="section-header">
-        <p class="section-title">Featured Posts</p>
-      </div>
-      <div class="posts-grid">
-        {% for post in collections.posts %}
-        {% include "post-card.njk" %}
-        {% endfor %}
-      </div>
-    </section>
-  </div>
-</main>
+  <main>
+    <div class="container">
+      <section id="featured-posts" class="section">
+        <div class="section-header">
+          <p class="section-title">Featured Posts</p>
+        </div>
+        <div class="posts-grid">
+          {% for post in collections.posts %}
+          {% include "post-card.njk" %} 
+          {% endfor %}
+        </div>
+      </section>
+    </div>
+  </main>
+</div>

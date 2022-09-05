@@ -1,0 +1,16 @@
+---
+title: Blog
+---
+
+<div class="container">
+  <section class="section">
+    <div class="section-header">
+      <p class="section-title">All Posts</p>
+    </div>
+    <div class="posts-grid">
+      {% for post in collections.posts %}
+      {% include "post-card.njk" %} 
+      {% endfor %}
+    </div>
+  </section>
+</div>
