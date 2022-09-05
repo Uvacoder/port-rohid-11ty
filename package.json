@@ -8,7 +8,7 @@
     "eleventy:dev": "eleventy --serve",
     "eleventy:build": "eleventy",
     "dev": "concurrently \"yarn sass:dev\" \"yarn eleventy:dev\"",
-    "build": "rimraf build && yarn sass:build && yarn eleventy:build"
+    "build": "rimraf _site && yarn sass:build && yarn eleventy:build"
   },
   "devDependencies": {
     "@11ty/eleventy": "11ty/eleventy",
