@@ -42,11 +42,11 @@ figure {
   align-items: center;
 }
 
-.menu li > a {
+.menu li {
   color: #52555a;
 }
 
-.menu li > a:hover, .menu li > a.active {
+.menu li:hover, .menu li.active {
   color: #1d2025;
 }
 

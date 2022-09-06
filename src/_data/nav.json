@@ -2,27 +2,27 @@
   "items": [
     {
       "label": "Blog",
-      "href": "/blog"
+      "href": "/blog/"
     },
     {
       "label": "Projects",
-      "href": "/projects"
+      "href": "/projects/"
     },
     {
       "label": "Categories",
-      "href": "/categories"
+      "href": "/categories/"
     },
     {
       "label": "Tags",
-      "href": "/tags"
+      "href": "/tags/"
     },
     {
       "label": "Newsletter",
-      "href": "/newsletter"
+      "href": "/newsletter/"
     },
     {
       "label": "Hire Me",
-      "href": "/hire-me"
+      "href": "/hire-me/"
     }
   ]
 }

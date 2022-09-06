@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  li > a {
+  li {
     color: $color-gray-600;
     &:hover,
     &.active {

@@ -1,4 +1,4 @@
-<nav class="nav-bar">
+<nav class="nav-bar" role="navigation">
   <div class="container">
     <div class="content">
       <div class="left-wrapper">
@@ -7,8 +7,12 @@
       <div class="right-wrapper">
         <ul class="menu nav-menu">
           {% for item in nav.items %}
-            <li>
-              <a href="{{ item.href }}" {% if item.href == page.url %} class="active" {% endif %}>{{ item.label }}</a>
+            <li class="menu-item{% if item.href == page.url %} active{% endif %}">
+              <a href="{{ item.href }}"
+              {% if item.href == page.url %} 
+              aria-current="page"
+              {% endif %}
+              >{{ item.label }}</a>
               </li>
           {% endfor %}
         </ul>
