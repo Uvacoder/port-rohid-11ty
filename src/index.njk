@@ -3,27 +3,25 @@ layout: base.njk
 title: Home
 ---
 
-<div class="home-layout">
-  <header>
-    <div class="container">
-      <h1 class="title">{{ site.info.title }}</h1>
-      <p class="subtitle">{{ site.info.content }}</p>
-      {% include "newsletter-form.njk" %}
-    </div>
-  </header>
+<header class="my-16">
+  <div class="max-w-4xl mx-auto px-4 w-full">
+    <h1 class="text-3xl font-medium">{{ site.info.title }}</h1>
+    <p class="text-xl text-gray-600 dark:text-gray-300">{{ site.info.content }}</p>
+    {% include "newsletter-form.njk" %}
+  </div>
+</header>
 
-  <main>
-    <div class="container">
-      <section id="featured-posts" class="section">
-        <div class="section-header">
-          <p class="section-title">Featured Posts</p>
-        </div>
-        <div class="posts-grid">
-          {% for post in collections.posts %}
-          {% include "post-card.njk" %} 
-          {% endfor %}
-        </div>
-      </section>
-    </div>
-  </main>
-</div>
+<main>
+  <div class="container">
+    <section id="featured-posts" class="section">
+      <div class="section-header">
+        <p class="section-title">Featured Posts</p>
+      </div>
+      <div class="posts-grid">
+        {% for post in collections.posts %}
+        {% include "post-card.njk" %} 
+        {% endfor %}
+      </div>
+    </section>
+  </div>
+</main>

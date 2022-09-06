@@ -5,17 +5,22 @@
   "scripts": {
     "sass:dev": "sass src/styles/main.scss:src/styles/main.css --watch",
     "sass:build": "sass src/styles/main.scss:src/styles/main.css",
+    "tailwind:dev": "tailwindcss -i ./src/styles/tailwind.css -o ./src/styles/main.css --watch",
+    "tailwind:build": "tailwindcss -i ./src/styles/tailwind.css -o ./src/styles/main.css",
     "eleventy:dev": "eleventy --serve",
     "eleventy:build": "eleventy",
-    "dev": "concurrently \"yarn sass:dev\" \"yarn eleventy:dev\"",
-    "build": "rimraf _site && yarn sass:build && yarn eleventy:build"
+    "dev": "concurrently \"yarn tailwind:dev\" \"yarn eleventy:dev\"",
+    "build": "rimraf _site && yarn tailwind:build && yarn eleventy:build"
   },
   "devDependencies": {
     "@11ty/eleventy": "11ty/eleventy",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
+    "autoprefixer": "^10.4.8",
     "concurrently": "^7.3.0",
+    "postcss": "^8.4.16",
     "rimraf": "^3.0.2",
-    "sass": "^1.54.8"
+    "sass": "^1.54.8",
+    "tailwindcss": "^3.1.8"
   },
   "dependencies": {
     "date-fns": "^2.29.2",

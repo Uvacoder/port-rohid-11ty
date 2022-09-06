@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "brand": "fa-github",
+      "label": "Github",
+      "href": "https://github.com/rohid-dev"
+    },
+    {
+      "brand": "fa-twitter",
+      "label": "Github",
+      "href": "https://twitter.com/rohid_dev"
+    },
+    {
+      "brand": "fa-instagram",
+      "label": "Instagram",
+      "href": "https://instagram.com/rohid.dev"
+    },
+    {
+      "brand": "fa-youtube",
+      "label": "YouTube",
+      "href": "https://www.youtube.com/channel/UC3fyatEjSzRkzt_Wj1sg1hw"
+    },
+    {
+      "brand": "fa-linkedin-in",
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/md-rohidul-islam-04a655229/"
+    }
+  ]
+}

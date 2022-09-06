@@ -1,11 +1,20 @@
-<nav class="nav-bar" role="navigation">
-  <div class="container">
-    <div class="content">
-      <div class="left-wrapper">
-        <a href="/" class="nav-logo">Rohid</a>
-      </div>
-      <div class="right-wrapper">
-        <ul class="menu nav-menu">
+<header class="bg-primary-500 text-white">
+
+  <nav class="h-16" role="navigation">
+    <div class="mx-auto max-w-4xl px-4 w-full h-full">
+      <div class="flex items-center gap-8 h-full">
+
+        <div class="flex-1 flex items-center gap-4 h-full">
+
+          <button class="flex items-center justify-center p-3 -m-3 md:hidden text-xl">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <a href="/" class="text-xl uppercase font-semibold">Rohid</a>
+          
+        </div>
+
+        <ul class="hidden md:flex items-center gap-4">
           {% for item in nav.items %}
             <li class="menu-item{% if item.href == page.url %} active{% endif %}">
               <a href="{{ item.href }}"
@@ -16,7 +25,40 @@
               </li>
           {% endfor %}
         </ul>
+
       </div>
     </div>
+  </nav>
+
+  <div class="mx-auto px-4 max-w-xl w-full justify-center py-8 text-center">
+
+      <figure class="mb-8 flex items-center justify-center">
+        <a href="/">
+          <img src="https://pbs.twimg.com/profile_images/1481868973537132544/0NSx-X8V_400x400.jpg" alt="Profile Photo" class="w-32 h-32 rounded-full overflow-hidden object-cover ring-2 ring-white ring-offset-4 ring-offset-primary-500">
+        </a> 
+      </figure>
+    
+    <ul class="flex items-center text-2xl flex-wrap justify-center mb-4" >
+      {% for item in social.items %}
+        <li>
+          <a href="{{ item.href }}" title="{{ item.label }}" target="_blank" rel="noopener" class="flex items-center justify-center p-2.5 hover:scale-110 transition-transform duration-300">
+            <i class="fa-brands {{item.brand}}"></i>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+    
+    <div class="mb-8">
+      <a href="/" class="text-3xl font-bold uppercase mb-1 inline-block">MD Rohidul Islam</a>
+      <p class="text-xl text-primary-100">Self-thought programmer & designer</p>
+    </div>
+
+    <form>
+      <p class="mb-2 text-primary-100 text-left">Subscirbe to my newsletter</p>
+      <div class="flex gap-2 items-center justify-center">
+      <input type="email" placeholder="Email Addresss" class="px-4 h-10 rounded-md bg-white text-gray-900 placeholder:text-gray-400 w-full flex-1">
+      <button type="submit" class="px-4 h-10 rounded-md bg-gray-900 text-white hover:bg-gray-800 font-medium">Subscirbe</button>
+      </div>
+    </form>
   </div>
-</nav>
+</header>
