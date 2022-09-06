@@ -14,6 +14,7 @@
     <title>
       {% if title %}{{ title }} - {% endif %}{{ site.title }}
     </title>
+    <link rel="stylesheet" href="/assets/prism/prism.css"  />
     <link rel="stylesheet" href="/assets/fontawesome/css/fontawesome.css"  />
     <link rel="stylesheet" href="/assets/fontawesome/css/brands.css"  />
     <link rel="stylesheet" href="/assets/fontawesome/css/solid.css"  />
@@ -21,7 +22,7 @@
     {% block head %}
     {% endblock %}
   </head>
-  <body>
+  <body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
     {% include "navbar.njk" %}
     {{ content | safe }}
     {% include "footer.njk" %}

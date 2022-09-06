@@ -1,17 +1,27 @@
-<footer class="footer">
-  <div class="container">
-    <a href='/' class="footer-title">Rohidul Islam</a>
+<footer class="bg-gray-800 py-8 text-gray-100 text-center">
+  <div class="mx-auto px-4 max-w-4xl w-full">
+    <div class="mb-4">
+      <a href='/' class="text-2xl font-bold uppercase inline-block mb-4">MD Rohidul Islam</a>
 
-    {% include "newsletter-form.njk" %}
+      <ul class="flex items-center text-xl flex-wrap justify-center" >
+        {% for item in social.items %}
+          <li>
+            <a href="{{ item.href }}" title="{{ item.label }}" target="_blank" rel="noopener" class="flex items-center justify-center p-2.5 hover:scale-110 transition-transform duration-300">
+              <i class="fa-brands {{item.brand}}"></i>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
     
-    <ul class="menu footer-menu">
+    <ul class="flex items-center gap-4 mb-8 justify-center flex-wrap">
       {% for item in nav.items %}
         <li>
           <a href="{{ item.href }}" {% if item.href == page.url %} class="active" {% endif %}>{{ item.label }}</a>
-          </li>
+        </li>
       {% endfor %}
     </ul>
 
-    <p class="copyright-text">&copy; 2022 Oliur. All Rights Reserved.</p>
+    <p class="text-gray-400">&copy; 2022 Oliur. All Rights Reserved.</p>
   </div>
 </footer>

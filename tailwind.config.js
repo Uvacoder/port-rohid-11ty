@@ -2,7 +2,6 @@ const colors = require("tailwindcss/colors");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{njk,html,md}"],
-  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -22,5 +21,8 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/line-clamp"),
+  ],
 };

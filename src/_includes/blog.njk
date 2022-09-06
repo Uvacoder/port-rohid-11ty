@@ -2,24 +2,25 @@
 layout: base.njk
 ---
 
-<div class="blog-layout">
-  <header>
-    <div class="container">
-      <h1 class="title">{{ title }}</h1>
-      <p class="info">
-        <span>Published at {{ date | formatDate }}</span>
-        <span>•</span>
-        <span>{{ content | readingTime }}</span>
-      </p>
-      <figure>
-        <img src="{{ coverPhoto }}" alt="Cover Photo" class="cover-photo" />
-      </figure>
-    </div>
-  </header>
-
-  <main>
-    <div class="container">
-      <article class="prose">{{content|safe}}</article>
-    </div>
-  </main>
-</div>
+<main class="my-12">
+  <div class="mx-auto max-w-2xl px-4 w-full">
+    <article class="my-12 prose dark:prose-invert">
+      <header>
+        <p>
+          <span>{{ date | formatDate }}</span>
+          <span>•</span>
+          <span>{{ content | readingTime }}</span>
+        </p>
+        <h1>{{ title }}</h1>
+        {% if coverPhoto %}
+          <figure>
+            <img src="{{ coverPhoto }}" alt="Cover Photo" class="w-full aspect-video rounded-md overflow-hidden object-cover" />
+          </figure>
+        {% endif %}
+      </header>
+      <section>
+        {{content|safe}}
+      </section>
+    </article>
+  </div>
+</main>
