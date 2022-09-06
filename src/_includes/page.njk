@@ -2,12 +2,18 @@
 layout: base.njk
 ---
 
-<div class="page-layout">
-  <header class="header">
-    <div class="container">
-      <h1 class="title">{{title}}</h1>
+
+
+<main>
+  <header class="my-12">
+    <div class="px-4 mx-auto max-w-2xl w-full">
+      <h1 class="text-3xl font-bold">{{title}}</h1>
+      {% if description %}
+        <p class="text-gray-600 dark:text-gray-300 mt-2">{{description}}</p>
+      {% endif %}
     </div>
   </header>
-
-  <main>{{ content | safe }}</main>
-</div>
+  <div class="my-12">
+    {{ content | safe }}
+  </div>
+</main>
